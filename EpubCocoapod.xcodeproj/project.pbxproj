@@ -7,15 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EBEB7F99DD5823B8BA3D85F /* libPods-EpubCocoapod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE795B352B82B16DB571A2E5 /* libPods-EpubCocoapod.a */; };
 		47CAB4AE20526E660021193A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4AD20526E660021193A /* AppDelegate.m */; };
 		47CAB4B120526E660021193A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4B020526E660021193A /* ViewController.m */; };
 		47CAB4B420526E660021193A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CAB4B220526E660021193A /* Main.storyboard */; };
 		47CAB4B620526E660021193A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47CAB4B520526E660021193A /* Assets.xcassets */; };
 		47CAB4B920526E660021193A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CAB4B720526E660021193A /* LaunchScreen.storyboard */; };
 		47CAB4BC20526E660021193A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4BB20526E660021193A /* main.m */; };
+		47CAB54920526E980021193A /* BaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4C620526E810021193A /* BaseDao.m */; };
+		47CAB54A20526E980021193A /* Catalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4C920526E810021193A /* Catalog.m */; };
+		47CAB54B20526E980021193A /* HYToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4CB20526E810021193A /* HYToast.m */; };
+		47CAB54C20526E980021193A /* NSObject+UIPopover_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4CD20526E810021193A /* NSObject+UIPopover_iPhone.m */; };
+		47CAB54D20526E980021193A /* PaperImageBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4CF20526E810021193A /* PaperImageBrowserController.m */; };
+		47CAB54E20526E980021193A /* ReadingStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4D220526E810021193A /* ReadingStorage.m */; };
+		47CAB54F20526E980021193A /* SqliteInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4D420526E810021193A /* SqliteInterface.m */; };
+		47CAB55020526E980021193A /* StatisticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4D620526E810021193A /* StatisticsManager.m */; };
+		47CAB55120526E980021193A /* TeaRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4D820526E810021193A /* TeaRecord.m */; };
+		47CAB55220526E980021193A /* TeaRecordDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4DA20526E820021193A /* TeaRecordDAO.m */; };
+		47CAB55320526E980021193A /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4DC20526E820021193A /* UserInfo.m */; };
+		47CAB55420526E980021193A /* UserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4DE20526E820021193A /* UserState.m */; };
+		47CAB55520526E980021193A /* EPUB.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4E020526E820021193A /* EPUB.m */; };
+		47CAB55620526EB20021193A /* EImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4E320526E820021193A /* EImageView.m */; };
+		47CAB55720526EB20021193A /* ENoteRefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4E520526E820021193A /* ENoteRefViewController.m */; };
+		47CAB55820526EB20021193A /* EpubChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4E720526E820021193A /* EpubChapter.m */; };
+		47CAB55920526EB20021193A /* EpubChapterCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4E920526E820021193A /* EpubChapterCoverView.m */; };
+		47CAB55A20526EB20021193A /* EPUBChapterListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4EB20526E820021193A /* EPUBChapterListViewController.m */; };
+		47CAB55B20526EB20021193A /* EPUBDateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4ED20526E820021193A /* EPUBDateModel.m */; };
+		47CAB55C20526EB20021193A /* EpubListObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4EF20526E820021193A /* EpubListObject.m */; };
+		47CAB55D20526EB20021193A /* EpubMainScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4F120526E820021193A /* EpubMainScrollView.m */; };
+		47CAB55E20526EB20021193A /* EpubMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4F320526E820021193A /* EpubMainView.m */; };
+		47CAB55F20526EB20021193A /* EPubMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4F520526E820021193A /* EPubMainViewController.m */; };
+		47CAB56020526EB20021193A /* EpubMarkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4F720526E820021193A /* EpubMarkObject.m */; };
+		47CAB56120526EB20021193A /* EpubNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4F920526E820021193A /* EpubNavigationBar.m */; };
+		47CAB56220526EB20021193A /* EpubNavigationBarSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4FB20526E820021193A /* EpubNavigationBarSearchBar.m */; };
+		47CAB56320526EB20021193A /* EpubNoteListObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4FD20526E820021193A /* EpubNoteListObject.m */; };
+		47CAB56420526EB20021193A /* EpubNotePoperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4FF20526E820021193A /* EpubNotePoperViewController.m */; };
+		47CAB56520526EB20021193A /* EpubOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB50120526E820021193A /* EpubOptionView.m */; };
+		47CAB56620526EB20021193A /* EpubSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB50420526E820021193A /* EpubSearchViewController.m */; };
+		47CAB56720526EB20021193A /* EPUBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB50720526E820021193A /* EPUBUtils.m */; };
+		47CAB56820526EB20021193A /* EpubWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB50920526E820021193A /* EpubWebView.m */; };
+		47CAB56920526EB20021193A /* HYEpubConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB50B20526E820021193A /* HYEpubConstants.m */; };
+		47CAB56A20526EB20021193A /* HYEpubContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB50D20526E820021193A /* HYEpubContentModel.m */; };
+		47CAB56B20526EB20021193A /* HYEpubController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB50F20526E820021193A /* HYEpubController.m */; };
+		47CAB56C20526EB20021193A /* HYEpubParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB51120526E820021193A /* HYEpubParser.m */; };
+		47CAB56D20526EB20021193A /* SearchResultObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB51320526E820021193A /* SearchResultObject.m */; };
+		47CAB56E20526EB80021193A /* JSBridgeWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB51820526E820021193A /* JSBridgeWebView.m */; };
+		47CAB56F20526EC30021193A /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB51C20526E820021193A /* NSObject+SBJSON.m */; };
+		47CAB57020526EC30021193A /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB51E20526E820021193A /* NSString+SBJSON.m */; };
+		47CAB57120526EC30021193A /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB52020526E820021193A /* SBJSON.m */; };
+		47CAB57220526EC30021193A /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB52220526E820021193A /* SBJsonBase.m */; };
+		47CAB57320526EC30021193A /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB52420526E820021193A /* SBJsonParser.m */; };
+		47CAB57420526EC30021193A /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB52620526E820021193A /* SBJsonWriter.m */; };
+		47CAB57520526EC70021193A /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB52A20526E820021193A /* DDXMLElementAdditions.m */; };
+		47CAB57620526ECD0021193A /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB52D20526E820021193A /* NSString+DDXML.m */; };
+		47CAB57720526ECD0021193A /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB53020526E820021193A /* DDXMLDocument.m */; };
+		47CAB57820526ECD0021193A /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB53220526E820021193A /* DDXMLElement.m */; };
+		47CAB57920526ECD0021193A /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB53420526E820021193A /* DDXMLNode.m */; };
+		47CAB57A20526ED50021193A /* BHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB53920526E820021193A /* BHButton.m */; };
+		47CAB57B20526ED50021193A /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB53B20526E820021193A /* PopoverView.m */; };
+		47CAB57D205275BE0021193A /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CAB57C205275BE0021193A /* libxml2.tbd */; };
+		47CAB57F205276C70021193A /* BundleEpbuJS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 47CAB57E205276C40021193A /* BundleEpbuJS.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14A684A0D1B64BEF5A0C41E8 /* Pods-EpubCocoapod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpubCocoapod.release.xcconfig"; path = "Pods/Target Support Files/Pods-EpubCocoapod/Pods-EpubCocoapod.release.xcconfig"; sourceTree = "<group>"; };
+		33A8C73F766CDE3D190AE4BE /* Pods-EpubCocoapod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpubCocoapod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EpubCocoapod/Pods-EpubCocoapod.debug.xcconfig"; sourceTree = "<group>"; };
 		47CAB4A920526E660021193A /* EpubCocoapod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpubCocoapod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CAB4AC20526E660021193A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		47CAB4AD20526E660021193A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +82,119 @@
 		47CAB4B820526E660021193A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47CAB4BA20526E660021193A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47CAB4BB20526E660021193A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47CAB4C520526E810021193A /* BaseDao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDao.h; sourceTree = "<group>"; };
+		47CAB4C620526E810021193A /* BaseDao.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseDao.m; sourceTree = "<group>"; };
+		47CAB4C720526E810021193A /* BehaviorDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BehaviorDefine.h; sourceTree = "<group>"; };
+		47CAB4C820526E810021193A /* Catalog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Catalog.h; sourceTree = "<group>"; };
+		47CAB4C920526E810021193A /* Catalog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Catalog.m; sourceTree = "<group>"; };
+		47CAB4CA20526E810021193A /* HYToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYToast.h; sourceTree = "<group>"; };
+		47CAB4CB20526E810021193A /* HYToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYToast.m; sourceTree = "<group>"; };
+		47CAB4CC20526E810021193A /* NSObject+UIPopover_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+UIPopover_iPhone.h"; sourceTree = "<group>"; };
+		47CAB4CD20526E810021193A /* NSObject+UIPopover_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UIPopover_iPhone.m"; sourceTree = "<group>"; };
+		47CAB4CE20526E810021193A /* PaperImageBrowserController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaperImageBrowserController.h; sourceTree = "<group>"; };
+		47CAB4CF20526E810021193A /* PaperImageBrowserController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperImageBrowserController.m; sourceTree = "<group>"; };
+		47CAB4D020526E810021193A /* ReadingDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadingDefine.h; sourceTree = "<group>"; };
+		47CAB4D120526E810021193A /* ReadingStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadingStorage.h; sourceTree = "<group>"; };
+		47CAB4D220526E810021193A /* ReadingStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadingStorage.m; sourceTree = "<group>"; };
+		47CAB4D320526E810021193A /* SqliteInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqliteInterface.h; sourceTree = "<group>"; };
+		47CAB4D420526E810021193A /* SqliteInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteInterface.m; sourceTree = "<group>"; };
+		47CAB4D520526E810021193A /* StatisticsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatisticsManager.h; sourceTree = "<group>"; };
+		47CAB4D620526E810021193A /* StatisticsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatisticsManager.m; sourceTree = "<group>"; };
+		47CAB4D720526E810021193A /* TeaRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeaRecord.h; sourceTree = "<group>"; };
+		47CAB4D820526E810021193A /* TeaRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeaRecord.m; sourceTree = "<group>"; };
+		47CAB4D920526E810021193A /* TeaRecordDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeaRecordDAO.h; sourceTree = "<group>"; };
+		47CAB4DA20526E820021193A /* TeaRecordDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeaRecordDAO.m; sourceTree = "<group>"; };
+		47CAB4DB20526E820021193A /* UserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		47CAB4DC20526E820021193A /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		47CAB4DD20526E820021193A /* UserState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserState.h; sourceTree = "<group>"; };
+		47CAB4DE20526E820021193A /* UserState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserState.m; sourceTree = "<group>"; };
+		47CAB4DF20526E820021193A /* EPUB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPUB.h; sourceTree = "<group>"; };
+		47CAB4E020526E820021193A /* EPUB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPUB.m; sourceTree = "<group>"; };
+		47CAB4E220526E820021193A /* EImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EImageView.h; sourceTree = "<group>"; };
+		47CAB4E320526E820021193A /* EImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EImageView.m; sourceTree = "<group>"; };
+		47CAB4E420526E820021193A /* ENoteRefViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ENoteRefViewController.h; sourceTree = "<group>"; };
+		47CAB4E520526E820021193A /* ENoteRefViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENoteRefViewController.m; sourceTree = "<group>"; };
+		47CAB4E620526E820021193A /* EpubChapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubChapter.h; sourceTree = "<group>"; };
+		47CAB4E720526E820021193A /* EpubChapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpubChapter.m; sourceTree = "<group>"; };
+		47CAB4E820526E820021193A /* EpubChapterCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubChapterCoverView.h; sourceTree = "<group>"; };
+		47CAB4E920526E820021193A /* EpubChapterCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpubChapterCoverView.m; sourceTree = "<group>"; };
+		47CAB4EA20526E820021193A /* EPUBChapterListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPUBChapterListViewController.h; sourceTree = "<group>"; };
+		47CAB4EB20526E820021193A /* EPUBChapterListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPUBChapterListViewController.m; sourceTree = "<group>"; };
+		47CAB4EC20526E820021193A /* EPUBDateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPUBDateModel.h; sourceTree = "<group>"; };
+		47CAB4ED20526E820021193A /* EPUBDateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPUBDateModel.m; sourceTree = "<group>"; };
+		47CAB4EE20526E820021193A /* EpubListObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubListObject.h; sourceTree = "<group>"; };
+		47CAB4EF20526E820021193A /* EpubListObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpubListObject.m; sourceTree = "<group>"; };
+		47CAB4F020526E820021193A /* EpubMainScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubMainScrollView.h; sourceTree = "<group>"; };
+		47CAB4F120526E820021193A /* EpubMainScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpubMainScrollView.m; sourceTree = "<group>"; };
+		47CAB4F220526E820021193A /* EpubMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubMainView.h; sourceTree = "<group>"; };
+		47CAB4F320526E820021193A /* EpubMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpubMainView.m; sourceTree = "<group>"; };
+		47CAB4F420526E820021193A /* EPubMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPubMainViewController.h; sourceTree = "<group>"; };
+		47CAB4F520526E820021193A /* EPubMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPubMainViewController.m; sourceTree = "<group>"; };
+		47CAB4F620526E820021193A /* EpubMarkObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubMarkObject.h; sourceTree = "<group>"; };
+		47CAB4F720526E820021193A /* EpubMarkObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpubMarkObject.m; sourceTree = "<group>"; };
+		47CAB4F820526E820021193A /* EpubNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubNavigationBar.h; sourceTree = "<group>"; };
+		47CAB4F920526E820021193A /* EpubNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpubNavigationBar.m; sourceTree = "<group>"; };
+		47CAB4FA20526E820021193A /* EpubNavigationBarSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubNavigationBarSearchBar.h; sourceTree = "<group>"; };
+		47CAB4FB20526E820021193A /* EpubNavigationBarSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpubNavigationBarSearchBar.m; sourceTree = "<group>"; };
+		47CAB4FC20526E820021193A /* EpubNoteListObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubNoteListObject.h; sourceTree = "<group>"; };
+		47CAB4FD20526E820021193A /* EpubNoteListObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpubNoteListObject.m; sourceTree = "<group>"; };
+		47CAB4FE20526E820021193A /* EpubNotePoperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubNotePoperViewController.h; sourceTree = "<group>"; };
+		47CAB4FF20526E820021193A /* EpubNotePoperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpubNotePoperViewController.m; sourceTree = "<group>"; };
+		47CAB50020526E820021193A /* EpubOptionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubOptionView.h; sourceTree = "<group>"; };
+		47CAB50120526E820021193A /* EpubOptionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpubOptionView.m; sourceTree = "<group>"; };
+		47CAB50220526E820021193A /* EpubProtocal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubProtocal.h; sourceTree = "<group>"; };
+		47CAB50320526E820021193A /* EpubSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubSearchViewController.h; sourceTree = "<group>"; };
+		47CAB50420526E820021193A /* EpubSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpubSearchViewController.m; sourceTree = "<group>"; };
+		47CAB50520526E820021193A /* EpubStaticDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubStaticDefine.h; sourceTree = "<group>"; };
+		47CAB50620526E820021193A /* EPUBUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPUBUtils.h; sourceTree = "<group>"; };
+		47CAB50720526E820021193A /* EPUBUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPUBUtils.m; sourceTree = "<group>"; };
+		47CAB50820526E820021193A /* EpubWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EpubWebView.h; sourceTree = "<group>"; };
+		47CAB50920526E820021193A /* EpubWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpubWebView.m; sourceTree = "<group>"; };
+		47CAB50A20526E820021193A /* HYEpubConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYEpubConstants.h; sourceTree = "<group>"; };
+		47CAB50B20526E820021193A /* HYEpubConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYEpubConstants.m; sourceTree = "<group>"; };
+		47CAB50C20526E820021193A /* HYEpubContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYEpubContentModel.h; sourceTree = "<group>"; };
+		47CAB50D20526E820021193A /* HYEpubContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYEpubContentModel.m; sourceTree = "<group>"; };
+		47CAB50E20526E820021193A /* HYEpubController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYEpubController.h; sourceTree = "<group>"; };
+		47CAB50F20526E820021193A /* HYEpubController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYEpubController.m; sourceTree = "<group>"; };
+		47CAB51020526E820021193A /* HYEpubParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYEpubParser.h; sourceTree = "<group>"; };
+		47CAB51120526E820021193A /* HYEpubParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYEpubParser.m; sourceTree = "<group>"; };
+		47CAB51220526E820021193A /* SearchResultObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultObject.h; sourceTree = "<group>"; };
+		47CAB51320526E820021193A /* SearchResultObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultObject.m; sourceTree = "<group>"; };
+		47CAB51420526E820021193A /* EPUBPch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPUBPch.pch; sourceTree = "<group>"; };
+		47CAB51720526E820021193A /* JSBridgeWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSBridgeWebView.h; sourceTree = "<group>"; };
+		47CAB51820526E820021193A /* JSBridgeWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSBridgeWebView.m; sourceTree = "<group>"; };
+		47CAB51A20526E820021193A /* JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		47CAB51B20526E820021193A /* NSObject+SBJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		47CAB51C20526E820021193A /* NSObject+SBJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		47CAB51D20526E820021193A /* NSString+SBJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		47CAB51E20526E820021193A /* NSString+SBJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		47CAB51F20526E820021193A /* SBJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		47CAB52020526E820021193A /* SBJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		47CAB52120526E820021193A /* SBJsonBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		47CAB52220526E820021193A /* SBJsonBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		47CAB52320526E820021193A /* SBJsonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		47CAB52420526E820021193A /* SBJsonParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		47CAB52520526E820021193A /* SBJsonWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		47CAB52620526E820021193A /* SBJsonWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		47CAB52920526E820021193A /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		47CAB52A20526E820021193A /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		47CAB52C20526E820021193A /* NSString+DDXML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		47CAB52D20526E820021193A /* NSString+DDXML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		47CAB52E20526E820021193A /* DDXML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		47CAB52F20526E820021193A /* DDXMLDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		47CAB53020526E820021193A /* DDXMLDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		47CAB53120526E820021193A /* DDXMLElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		47CAB53220526E820021193A /* DDXMLElement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		47CAB53320526E820021193A /* DDXMLNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		47CAB53420526E820021193A /* DDXMLNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		47CAB53620526E820021193A /* DDXMLPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		47CAB53820526E820021193A /* BHButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHButton.h; sourceTree = "<group>"; };
+		47CAB53920526E820021193A /* BHButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHButton.m; sourceTree = "<group>"; };
+		47CAB53A20526E820021193A /* PopoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
+		47CAB53B20526E820021193A /* PopoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopoverView.m; sourceTree = "<group>"; };
+		47CAB57C205275BE0021193A /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		47CAB57E205276C40021193A /* BundleEpbuJS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BundleEpbuJS.bundle; sourceTree = "<group>"; };
+		FE795B352B82B16DB571A2E5 /* libPods-EpubCocoapod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EpubCocoapod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +202,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47CAB57D205275BE0021193A /* libxml2.tbd in Frameworks */,
+				2EBEB7F99DD5823B8BA3D85F /* libPods-EpubCocoapod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +213,11 @@
 		47CAB4A020526E660021193A = {
 			isa = PBXGroup;
 			children = (
+				47CAB57E205276C40021193A /* BundleEpbuJS.bundle */,
 				47CAB4AB20526E660021193A /* EpubCocoapod */,
 				47CAB4AA20526E660021193A /* Products */,
+				8F6878F947BB2B6FC4375213 /* Pods */,
+				83766413C76EB3A6B4DF224D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +232,7 @@
 		47CAB4AB20526E660021193A /* EpubCocoapod */ = {
 			isa = PBXGroup;
 			children = (
+				47CAB4C320526E810021193A /* Classes */,
 				47CAB4AC20526E660021193A /* AppDelegate.h */,
 				47CAB4AD20526E660021193A /* AppDelegate.m */,
 				47CAB4AF20526E660021193A /* ViewController.h */,
@@ -71,6 +246,221 @@
 			path = EpubCocoapod;
 			sourceTree = "<group>";
 		};
+		47CAB4C320526E810021193A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				47CAB4C420526E810021193A /* Common */,
+				47CAB4DF20526E820021193A /* EPUB.h */,
+				47CAB4E020526E820021193A /* EPUB.m */,
+				47CAB4E120526E820021193A /* EpubKernel */,
+				47CAB51420526E820021193A /* EPUBPch.pch */,
+				47CAB51520526E820021193A /* ThirdPart */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		47CAB4C420526E810021193A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				47CAB4C520526E810021193A /* BaseDao.h */,
+				47CAB4C620526E810021193A /* BaseDao.m */,
+				47CAB4C720526E810021193A /* BehaviorDefine.h */,
+				47CAB4C820526E810021193A /* Catalog.h */,
+				47CAB4C920526E810021193A /* Catalog.m */,
+				47CAB4CA20526E810021193A /* HYToast.h */,
+				47CAB4CB20526E810021193A /* HYToast.m */,
+				47CAB4CC20526E810021193A /* NSObject+UIPopover_iPhone.h */,
+				47CAB4CD20526E810021193A /* NSObject+UIPopover_iPhone.m */,
+				47CAB4CE20526E810021193A /* PaperImageBrowserController.h */,
+				47CAB4CF20526E810021193A /* PaperImageBrowserController.m */,
+				47CAB4D020526E810021193A /* ReadingDefine.h */,
+				47CAB4D120526E810021193A /* ReadingStorage.h */,
+				47CAB4D220526E810021193A /* ReadingStorage.m */,
+				47CAB4D320526E810021193A /* SqliteInterface.h */,
+				47CAB4D420526E810021193A /* SqliteInterface.m */,
+				47CAB4D520526E810021193A /* StatisticsManager.h */,
+				47CAB4D620526E810021193A /* StatisticsManager.m */,
+				47CAB4D720526E810021193A /* TeaRecord.h */,
+				47CAB4D820526E810021193A /* TeaRecord.m */,
+				47CAB4D920526E810021193A /* TeaRecordDAO.h */,
+				47CAB4DA20526E820021193A /* TeaRecordDAO.m */,
+				47CAB4DB20526E820021193A /* UserInfo.h */,
+				47CAB4DC20526E820021193A /* UserInfo.m */,
+				47CAB4DD20526E820021193A /* UserState.h */,
+				47CAB4DE20526E820021193A /* UserState.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		47CAB4E120526E820021193A /* EpubKernel */ = {
+			isa = PBXGroup;
+			children = (
+				47CAB4E220526E820021193A /* EImageView.h */,
+				47CAB4E320526E820021193A /* EImageView.m */,
+				47CAB4E420526E820021193A /* ENoteRefViewController.h */,
+				47CAB4E520526E820021193A /* ENoteRefViewController.m */,
+				47CAB4E620526E820021193A /* EpubChapter.h */,
+				47CAB4E720526E820021193A /* EpubChapter.m */,
+				47CAB4E820526E820021193A /* EpubChapterCoverView.h */,
+				47CAB4E920526E820021193A /* EpubChapterCoverView.m */,
+				47CAB4EA20526E820021193A /* EPUBChapterListViewController.h */,
+				47CAB4EB20526E820021193A /* EPUBChapterListViewController.m */,
+				47CAB4EC20526E820021193A /* EPUBDateModel.h */,
+				47CAB4ED20526E820021193A /* EPUBDateModel.m */,
+				47CAB4EE20526E820021193A /* EpubListObject.h */,
+				47CAB4EF20526E820021193A /* EpubListObject.m */,
+				47CAB4F020526E820021193A /* EpubMainScrollView.h */,
+				47CAB4F120526E820021193A /* EpubMainScrollView.m */,
+				47CAB4F220526E820021193A /* EpubMainView.h */,
+				47CAB4F320526E820021193A /* EpubMainView.m */,
+				47CAB4F420526E820021193A /* EPubMainViewController.h */,
+				47CAB4F520526E820021193A /* EPubMainViewController.m */,
+				47CAB4F620526E820021193A /* EpubMarkObject.h */,
+				47CAB4F720526E820021193A /* EpubMarkObject.m */,
+				47CAB4F820526E820021193A /* EpubNavigationBar.h */,
+				47CAB4F920526E820021193A /* EpubNavigationBar.m */,
+				47CAB4FA20526E820021193A /* EpubNavigationBarSearchBar.h */,
+				47CAB4FB20526E820021193A /* EpubNavigationBarSearchBar.m */,
+				47CAB4FC20526E820021193A /* EpubNoteListObject.h */,
+				47CAB4FD20526E820021193A /* EpubNoteListObject.m */,
+				47CAB4FE20526E820021193A /* EpubNotePoperViewController.h */,
+				47CAB4FF20526E820021193A /* EpubNotePoperViewController.m */,
+				47CAB50020526E820021193A /* EpubOptionView.h */,
+				47CAB50120526E820021193A /* EpubOptionView.m */,
+				47CAB50220526E820021193A /* EpubProtocal.h */,
+				47CAB50320526E820021193A /* EpubSearchViewController.h */,
+				47CAB50420526E820021193A /* EpubSearchViewController.m */,
+				47CAB50520526E820021193A /* EpubStaticDefine.h */,
+				47CAB50620526E820021193A /* EPUBUtils.h */,
+				47CAB50720526E820021193A /* EPUBUtils.m */,
+				47CAB50820526E820021193A /* EpubWebView.h */,
+				47CAB50920526E820021193A /* EpubWebView.m */,
+				47CAB50A20526E820021193A /* HYEpubConstants.h */,
+				47CAB50B20526E820021193A /* HYEpubConstants.m */,
+				47CAB50C20526E820021193A /* HYEpubContentModel.h */,
+				47CAB50D20526E820021193A /* HYEpubContentModel.m */,
+				47CAB50E20526E820021193A /* HYEpubController.h */,
+				47CAB50F20526E820021193A /* HYEpubController.m */,
+				47CAB51020526E820021193A /* HYEpubParser.h */,
+				47CAB51120526E820021193A /* HYEpubParser.m */,
+				47CAB51220526E820021193A /* SearchResultObject.h */,
+				47CAB51320526E820021193A /* SearchResultObject.m */,
+			);
+			path = EpubKernel;
+			sourceTree = "<group>";
+		};
+		47CAB51520526E820021193A /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				47CAB51620526E820021193A /* JSBridgeWebView */,
+				47CAB51920526E820021193A /* JSON */,
+				47CAB52720526E820021193A /* KissXML */,
+				47CAB53720526E820021193A /* Support */,
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		47CAB51620526E820021193A /* JSBridgeWebView */ = {
+			isa = PBXGroup;
+			children = (
+				47CAB51720526E820021193A /* JSBridgeWebView.h */,
+				47CAB51820526E820021193A /* JSBridgeWebView.m */,
+			);
+			path = JSBridgeWebView;
+			sourceTree = "<group>";
+		};
+		47CAB51920526E820021193A /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				47CAB51A20526E820021193A /* JSON.h */,
+				47CAB51B20526E820021193A /* NSObject+SBJSON.h */,
+				47CAB51C20526E820021193A /* NSObject+SBJSON.m */,
+				47CAB51D20526E820021193A /* NSString+SBJSON.h */,
+				47CAB51E20526E820021193A /* NSString+SBJSON.m */,
+				47CAB51F20526E820021193A /* SBJSON.h */,
+				47CAB52020526E820021193A /* SBJSON.m */,
+				47CAB52120526E820021193A /* SBJsonBase.h */,
+				47CAB52220526E820021193A /* SBJsonBase.m */,
+				47CAB52320526E820021193A /* SBJsonParser.h */,
+				47CAB52420526E820021193A /* SBJsonParser.m */,
+				47CAB52520526E820021193A /* SBJsonWriter.h */,
+				47CAB52620526E820021193A /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		47CAB52720526E820021193A /* KissXML */ = {
+			isa = PBXGroup;
+			children = (
+				47CAB52820526E820021193A /* Additions */,
+				47CAB52B20526E820021193A /* Categories */,
+				47CAB52E20526E820021193A /* DDXML.h */,
+				47CAB52F20526E820021193A /* DDXMLDocument.h */,
+				47CAB53020526E820021193A /* DDXMLDocument.m */,
+				47CAB53120526E820021193A /* DDXMLElement.h */,
+				47CAB53220526E820021193A /* DDXMLElement.m */,
+				47CAB53320526E820021193A /* DDXMLNode.h */,
+				47CAB53420526E820021193A /* DDXMLNode.m */,
+				47CAB53520526E820021193A /* Private */,
+			);
+			path = KissXML;
+			sourceTree = "<group>";
+		};
+		47CAB52820526E820021193A /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				47CAB52920526E820021193A /* DDXMLElementAdditions.h */,
+				47CAB52A20526E820021193A /* DDXMLElementAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		47CAB52B20526E820021193A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				47CAB52C20526E820021193A /* NSString+DDXML.h */,
+				47CAB52D20526E820021193A /* NSString+DDXML.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		47CAB53520526E820021193A /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				47CAB53620526E820021193A /* DDXMLPrivate.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		47CAB53720526E820021193A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				47CAB53820526E820021193A /* BHButton.h */,
+				47CAB53920526E820021193A /* BHButton.m */,
+				47CAB53A20526E820021193A /* PopoverView.h */,
+				47CAB53B20526E820021193A /* PopoverView.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		83766413C76EB3A6B4DF224D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47CAB57C205275BE0021193A /* libxml2.tbd */,
+				FE795B352B82B16DB571A2E5 /* libPods-EpubCocoapod.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F6878F947BB2B6FC4375213 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33A8C73F766CDE3D190AE4BE /* Pods-EpubCocoapod.debug.xcconfig */,
+				14A684A0D1B64BEF5A0C41E8 /* Pods-EpubCocoapod.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +468,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47CAB4BF20526E660021193A /* Build configuration list for PBXNativeTarget "EpubCocoapod" */;
 			buildPhases = (
+				219F0BDDCCB0B54405B6FFF1 /* [CP] Check Pods Manifest.lock */,
 				47CAB4A520526E660021193A /* Sources */,
 				47CAB4A620526E660021193A /* Frameworks */,
 				47CAB4A720526E660021193A /* Resources */,
+				470CFCF60728D08027039EE4 /* [CP] Embed Pods Frameworks */,
+				608422785CFF2F4D5142411C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,20 +524,120 @@
 			files = (
 				47CAB4B920526E660021193A /* LaunchScreen.storyboard in Resources */,
 				47CAB4B620526E660021193A /* Assets.xcassets in Resources */,
+				47CAB57F205276C70021193A /* BundleEpbuJS.bundle in Resources */,
 				47CAB4B420526E660021193A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		219F0BDDCCB0B54405B6FFF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		470CFCF60728D08027039EE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpubCocoapod/Pods-EpubCocoapod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		608422785CFF2F4D5142411C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpubCocoapod/Pods-EpubCocoapod-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		47CAB4A520526E660021193A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47CAB55720526EB20021193A /* ENoteRefViewController.m in Sources */,
+				47CAB54E20526E980021193A /* ReadingStorage.m in Sources */,
+				47CAB55D20526EB20021193A /* EpubMainScrollView.m in Sources */,
+				47CAB55820526EB20021193A /* EpubChapter.m in Sources */,
+				47CAB56F20526EC30021193A /* NSObject+SBJSON.m in Sources */,
+				47CAB57820526ECD0021193A /* DDXMLElement.m in Sources */,
+				47CAB56420526EB20021193A /* EpubNotePoperViewController.m in Sources */,
+				47CAB57A20526ED50021193A /* BHButton.m in Sources */,
+				47CAB54B20526E980021193A /* HYToast.m in Sources */,
+				47CAB57220526EC30021193A /* SBJsonBase.m in Sources */,
 				47CAB4B120526E660021193A /* ViewController.m in Sources */,
+				47CAB56E20526EB80021193A /* JSBridgeWebView.m in Sources */,
+				47CAB54F20526E980021193A /* SqliteInterface.m in Sources */,
+				47CAB57120526EC30021193A /* SBJSON.m in Sources */,
+				47CAB55A20526EB20021193A /* EPUBChapterListViewController.m in Sources */,
+				47CAB57620526ECD0021193A /* NSString+DDXML.m in Sources */,
+				47CAB57B20526ED50021193A /* PopoverView.m in Sources */,
+				47CAB56C20526EB20021193A /* HYEpubParser.m in Sources */,
+				47CAB56020526EB20021193A /* EpubMarkObject.m in Sources */,
+				47CAB57920526ECD0021193A /* DDXMLNode.m in Sources */,
+				47CAB57720526ECD0021193A /* DDXMLDocument.m in Sources */,
 				47CAB4BC20526E660021193A /* main.m in Sources */,
+				47CAB56520526EB20021193A /* EpubOptionView.m in Sources */,
+				47CAB54D20526E980021193A /* PaperImageBrowserController.m in Sources */,
+				47CAB55620526EB20021193A /* EImageView.m in Sources */,
+				47CAB55320526E980021193A /* UserInfo.m in Sources */,
+				47CAB57520526EC70021193A /* DDXMLElementAdditions.m in Sources */,
+				47CAB55920526EB20021193A /* EpubChapterCoverView.m in Sources */,
+				47CAB55F20526EB20021193A /* EPubMainViewController.m in Sources */,
+				47CAB56220526EB20021193A /* EpubNavigationBarSearchBar.m in Sources */,
+				47CAB56320526EB20021193A /* EpubNoteListObject.m in Sources */,
+				47CAB54C20526E980021193A /* NSObject+UIPopover_iPhone.m in Sources */,
+				47CAB55420526E980021193A /* UserState.m in Sources */,
+				47CAB56720526EB20021193A /* EPUBUtils.m in Sources */,
+				47CAB55120526E980021193A /* TeaRecord.m in Sources */,
 				47CAB4AE20526E660021193A /* AppDelegate.m in Sources */,
+				47CAB56120526EB20021193A /* EpubNavigationBar.m in Sources */,
+				47CAB54A20526E980021193A /* Catalog.m in Sources */,
+				47CAB56D20526EB20021193A /* SearchResultObject.m in Sources */,
+				47CAB56B20526EB20021193A /* HYEpubController.m in Sources */,
+				47CAB54920526E980021193A /* BaseDao.m in Sources */,
+				47CAB57020526EC30021193A /* NSString+SBJSON.m in Sources */,
+				47CAB55520526E980021193A /* EPUB.m in Sources */,
+				47CAB55220526E980021193A /* TeaRecordDAO.m in Sources */,
+				47CAB57320526EC30021193A /* SBJsonParser.m in Sources */,
+				47CAB55E20526EB20021193A /* EpubMainView.m in Sources */,
+				47CAB56A20526EB20021193A /* HYEpubContentModel.m in Sources */,
+				47CAB56920526EB20021193A /* HYEpubConstants.m in Sources */,
+				47CAB55C20526EB20021193A /* EpubListObject.m in Sources */,
+				47CAB56820526EB20021193A /* EpubWebView.m in Sources */,
+				47CAB55020526E980021193A /* StatisticsManager.m in Sources */,
+				47CAB56620526EB20021193A /* EpubSearchViewController.m in Sources */,
+				47CAB55B20526EB20021193A /* EPUBDateModel.m in Sources */,
+				47CAB57420526EC30021193A /* SBJsonWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +769,14 @@
 		};
 		47CAB4C020526E660021193A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33A8C73F766CDE3D190AE4BE /* Pods-EpubCocoapod.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = Classes/EPUBPch.pch;
+				HEADER_SEARCH_PATHS = "${SDK_ROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = EpubCocoapod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.founder.EpubCocoapod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,10 +786,14 @@
 		};
 		47CAB4C120526E660021193A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A684A0D1B64BEF5A0C41E8 /* Pods-EpubCocoapod.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = Classes/EPUBPch.pch;
+				HEADER_SEARCH_PATHS = "${SDK_ROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = EpubCocoapod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.founder.EpubCocoapod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
