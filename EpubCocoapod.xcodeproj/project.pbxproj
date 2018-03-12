@@ -11,7 +11,6 @@
 		47CAB4AE20526E660021193A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4AD20526E660021193A /* AppDelegate.m */; };
 		47CAB4B120526E660021193A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4B020526E660021193A /* ViewController.m */; };
 		47CAB4B420526E660021193A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CAB4B220526E660021193A /* Main.storyboard */; };
-		47CAB4B620526E660021193A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47CAB4B520526E660021193A /* Assets.xcassets */; };
 		47CAB4B920526E660021193A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CAB4B720526E660021193A /* LaunchScreen.storyboard */; };
 		47CAB4BC20526E660021193A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4BB20526E660021193A /* main.m */; };
 		47CAB54920526E980021193A /* BaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB4C620526E810021193A /* BaseDao.m */; };
@@ -67,6 +66,7 @@
 		47CAB57B20526ED50021193A /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CAB53B20526E820021193A /* PopoverView.m */; };
 		47CAB57D205275BE0021193A /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CAB57C205275BE0021193A /* libxml2.tbd */; };
 		47CAB57F205276C70021193A /* BundleEpbuJS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 47CAB57E205276C40021193A /* BundleEpbuJS.bundle */; };
+		47CAB5CB205653A60021193A /* EPUB.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47CAB5CA205653A20021193A /* EPUB.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,7 +78,6 @@
 		47CAB4AF20526E660021193A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		47CAB4B020526E660021193A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		47CAB4B320526E660021193A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		47CAB4B520526E660021193A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47CAB4B820526E660021193A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47CAB4BA20526E660021193A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47CAB4BB20526E660021193A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -194,6 +193,7 @@
 		47CAB53B20526E820021193A /* PopoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopoverView.m; sourceTree = "<group>"; };
 		47CAB57C205275BE0021193A /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		47CAB57E205276C40021193A /* BundleEpbuJS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BundleEpbuJS.bundle; sourceTree = "<group>"; };
+		47CAB5CA205653A20021193A /* EPUB.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = EPUB.xcassets; sourceTree = "<group>"; };
 		FE795B352B82B16DB571A2E5 /* libPods-EpubCocoapod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EpubCocoapod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -232,13 +232,13 @@
 		47CAB4AB20526E660021193A /* EpubCocoapod */ = {
 			isa = PBXGroup;
 			children = (
+				47CAB5CA205653A20021193A /* EPUB.xcassets */,
 				47CAB4C320526E810021193A /* Classes */,
 				47CAB4AC20526E660021193A /* AppDelegate.h */,
 				47CAB4AD20526E660021193A /* AppDelegate.m */,
 				47CAB4AF20526E660021193A /* ViewController.h */,
 				47CAB4B020526E660021193A /* ViewController.m */,
 				47CAB4B220526E660021193A /* Main.storyboard */,
-				47CAB4B520526E660021193A /* Assets.xcassets */,
 				47CAB4B720526E660021193A /* LaunchScreen.storyboard */,
 				47CAB4BA20526E660021193A /* Info.plist */,
 				47CAB4BB20526E660021193A /* main.m */,
@@ -523,7 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47CAB4B920526E660021193A /* LaunchScreen.storyboard in Resources */,
-				47CAB4B620526E660021193A /* Assets.xcassets in Resources */,
+				47CAB5CB205653A60021193A /* EPUB.xcassets in Resources */,
 				47CAB57F205276C70021193A /* BundleEpbuJS.bundle in Resources */,
 				47CAB4B420526E660021193A /* Main.storyboard in Resources */,
 			);
