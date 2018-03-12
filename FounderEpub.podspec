@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FounderEpub"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "FounderEpub. Library"
 
   # This description is used to generate tags and improve search results.
@@ -114,6 +114,11 @@ Pod::Spec.new do |s|
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
+
+  s.resource_bundles = {
+  'BundleEpbuJS' => ['BundleEpbuJS.bundle'],
+  'EpubImage' => ['EpubCocoapod/EPUB.xcassets']
+  }
 
   # s.framework  = "UIKit"
   # s.frameworks = "UIKit", "AnotherFramework"

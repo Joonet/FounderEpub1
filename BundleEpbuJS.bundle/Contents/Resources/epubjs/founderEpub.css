@@ -1,0 +1,205 @@
+body {
+    padding:0 8%!important;
+    box-sizing:border-box;
+    margin:0;
+}
+.highlight {
+    background-color:#feea6d;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    cursor:pointer
+}
+.red span,.red1 {
+    background-color:#f64747
+}
+.pink span,.pink1 {
+    background-color:#ffb1cb
+}
+.blue span,.blue1 {
+    background-color:#add9ff
+}
+.green span,.green1 {
+    background-color:#c1ed72
+}
+.yellow span,.yellow1 {
+    background-color:#feea6d
+}
+.gray span,.gray1 {
+    background-color:#d8b2ff
+}
+.square {
+    font-size:12px;
+    text-align:center;
+    text-indent:0;
+    color:#984f00;
+    width:22px;
+    height:24px;
+    line-height:26px;
+    background:url(epubimg/yellow.png) -211px -14px no-repeat;
+    background-size:592px auto;
+    display:block;
+    position:absolute;
+    left:-28px;
+    top:0;
+    cursor:pointer
+}
+.marklist {
+    width:320px;
+    height:229px;
+    background:url(epubimg/yellow.png) -3px -388px no-repeat;
+    background-size:338px auto;
+    box-sizing:border-box;
+    padding:10px 16px 10px 34px;
+    position:absolute;
+    display:none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none
+}
+.marklist .markul {
+    height:206px;
+    overflow-y:auto;
+    overflow-x:hidden
+}
+.marklist li,.marklist ul {
+    list-style:none;
+    margin:0;
+    padding:0
+}
+.marklist li {
+    font-family:"microsoft yahei";
+    font-size:14px;
+    border-bottom:1px solid #e7c86e;
+    height:46px;
+    overflow:hidden;
+    cursor:pointer
+}
+.marklist li>p {
+    text-align:left;
+    text-indent:0;
+    line-height:16px;
+    margin:0;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden
+}
+.marklist li>p:first-child {
+    margin-top:4px
+}
+.marklist li>p:last-child {
+    font-size:12px;
+    line-height:14px;
+    margin-top:6px
+}
+.marklist li>p:last-child>span {
+    display:block;
+    float:left
+}
+.marklist li>p:last-child>span:first-child {
+    width:160px;
+    margin-right:20px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden
+}
+.marklist li>p:last-child>span:last-child {
+    color:#999
+}
+.fnslist {
+    width:132px;
+    height:42px;
+    background:url(epubimg/yellow.png) -3px -40px no-repeat;
+    background-size:347px auto;
+    position:absolute;
+    display:none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none
+}
+.fnslist>div {
+    font-size:12px;
+    text-indent:1000em;
+    color:#FFF;
+    position:absolute;
+    top:3px;
+    overflow:hidden;
+    cursor:pointer
+}
+.fnslist>.colorsel {
+    width:42px;
+    height:34px;
+    background:url(epubimg/yellow.png) 6px 2px no-repeat;
+    background-size:373px auto;
+    left:0;
+    top:0
+}
+.fnslist>.addnote {
+    width:42px;
+    height:34px;
+    background:url(epubimg/yellow.png) -35px 2px no-repeat;
+    background-size:362px auto;
+    left:45px;
+    top:0
+}
+.fnslist>.removehl {
+    width:42px;
+    height:34px;
+    background:url(epubimg/yellow.png) -79px 2px no-repeat;
+    background-size:370px auto;
+    left:90px;
+    top:0
+}
+.colorsdiv {
+    width:195px;
+    height:41px;
+    background:url(epubimg/yellow.png) -3px -86px no-repeat;
+    background-size:340px auto;
+    position:absolute;
+    display:none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none
+}
+.colorsdiv>div {
+    width:32px;
+    height:32px;
+    float:left;
+    cursor:pointer
+}
+.colorsdiv >div:first-child {
+    margin-left:1px
+}
+.colorsdiv>div>span {
+    width:23px;
+    height:23px;
+    margin:4px;
+    border-radius:50%;
+    border:1px solid #FFF;
+    display:block
+}
+.colorsdiv .active {
+    box-shadow:0 0 5px 5px rgba(255,255,255,.6)
+}
+.whitebgcolor {
+    background:#FFF!important
+}
+.graybgcolor {
+    background:#69696B!important;
+    color:#FFF!important
+}
+.lightgraybgcolor {
+    background:#EAEAEF!important
+}
+.orangebgcolor {
+    background:#FAF9DE!important
+}
+.blackbgcolor {
+    background:#333!important;
+    color:#FFF!important
+}
+.bluebgcolor {
+    background:#B6D1D3!important
+}
+.greenbgcolor {
+    background:#E3EDCD!important
+}
+.brownbgcolor {
+    background:#FFF2E2!important
+}
