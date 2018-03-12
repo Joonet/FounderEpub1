@@ -120,11 +120,6 @@ Pod::Spec.new do |s|
   s.prefix_header_file = 'Classes/EPUBPch.pch'
   s.library   = "xml2"
   # s.libraries = "iconv", "xml2"
-  s.resource_bundles = {
-
-  'BundleEpbuJS'  => [BundleEpbuJS.bundle]
-  }
-
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
