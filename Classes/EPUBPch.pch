@@ -10,6 +10,7 @@
 #define EPUBPch_pch
 #define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define DATA_FOLDER  [NSString stringWithFormat:@"%@%@/", [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0],@"/.Data"]
+#import "UIImage+UIImage_LoadCocoaPodImage.h"
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

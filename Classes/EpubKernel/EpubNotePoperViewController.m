@@ -33,7 +33,7 @@
     UIView *inputView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 40)];
     UIButton *doneButton = [[UIButton alloc]init];
     doneButton.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 60, 0, 50, 40);
-    [doneButton setImage:[UIImage imageNamed:@"down"] forState:UIControlStateNormal];
+    [doneButton setImage:[UIImage loadImageClass:[self class] ImageName:@"down"] forState:UIControlStateNormal];
     [doneButton addTarget:self action:@selector(didClickDone) forControlEvents:UIControlEventTouchUpInside];
     [inputView addSubview:doneButton];
     

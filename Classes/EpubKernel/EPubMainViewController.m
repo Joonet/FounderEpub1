@@ -1309,14 +1309,14 @@
         if(markObject.chapterIndex == nowChapterIndex && markObject.pageNum == nowPageIndex)
         {
             bookMarkIndex = i;
-            [epubMainView.navigateBar.bookMarkButton setImage:[UIImage imageNamed:@"kernel_bookmark_add"] forState:UIControlStateNormal];
+            [epubMainView.navigateBar.bookMarkButton setImage:[UIImage loadImageClass:[self class] ImageName:@"kernel_bookmark_add"] forState:UIControlStateNormal];
             return;
         }
     }
     
     bookMarkIndex = -1;
     
-    [epubMainView.navigateBar.bookMarkButton setImage:[UIImage imageNamed:@"kernel_bookmark"] forState:UIControlStateNormal];
+    [epubMainView.navigateBar.bookMarkButton setImage:[UIImage loadImageClass:[self class] ImageName:@"kernel_bookmark"] forState:UIControlStateNormal];
 }
 
 -(NSString *)getFlipTypeAndOren
@@ -1369,7 +1369,7 @@
         //        float saveoffset = 0;
         //        EpubChapter *chapter = [epubDataModel.chapterArray objectAtIndex:nowChapterIndex];
         //        saveoffset = nowPageIndex/chapter.pageCount;
-        [epubMainView.navigateBar.bookMarkButton setImage:[UIImage imageNamed:@"kernel_bookmark_add"] forState:UIControlStateNormal];
+        [epubMainView.navigateBar.bookMarkButton setImage:[UIImage loadImageClass:[self class] ImageName:@"kernel_bookmark_add"] forState:UIControlStateNormal];
         EpubMarkObject* bookmark =  [mainScrollView addBookMarkWithChapterIndex:nowChapterIndex];
         if(bookmark)
         {
@@ -1382,7 +1382,7 @@
     else
     {
         EpubMarkObject *markObject = [epubDataModel.markArray objectAtIndex:bookMarkIndex];
-        [epubMainView.navigateBar.bookMarkButton setImage:[UIImage imageNamed:@"kernel_bookmark"] forState:UIControlStateNormal];
+        [epubMainView.navigateBar.bookMarkButton setImage:[UIImage loadImageClass:[self class] ImageName:@"kernel_bookmark"] forState:UIControlStateNormal];
         [epubDataModel deleteBookMarkWithID:markObject.markId];
         
         [epubDataModel.markArray removeObjectAtIndex:bookMarkIndex];

@@ -92,28 +92,28 @@
     EPUP_BG_COLOR bgColor = [dic[@"kEpubBgColor"] intValue];
     switch (bgColor) {
         case epub_white:
-            [whiteBtn setImage:[UIImage imageNamed:@"epub_white_s"] forState:UIControlStateNormal];
+            [whiteBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_white_s"] forState:UIControlStateNormal];
             break;
         case epub_lightgray:
-            [lightgrayBtn setImage:[UIImage imageNamed:@"epub_lightgray_s"] forState:UIControlStateNormal];
+            [lightgrayBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_lightgray_s"] forState:UIControlStateNormal];
             break;
         case epub_black:
-            [blackBtn setImage:[UIImage imageNamed:@"epub_black_s"] forState:UIControlStateNormal];
+            [blackBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_black_s"] forState:UIControlStateNormal];
             break;
         case epub_gray:
-            [grayBtn setImage:[UIImage imageNamed:@"epub_gray_s"] forState:UIControlStateNormal];
+            [grayBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_gray_s"] forState:UIControlStateNormal];
             break;
         case epub_orange:
-            [orangeBtn setImage:[UIImage imageNamed:@"epub_orange_s"] forState:UIControlStateNormal];
+            [orangeBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_orange_s"] forState:UIControlStateNormal];
             break;
         case epub_blue:
-            [blueBtn setImage:[UIImage imageNamed:@"epub_blue_s"] forState:UIControlStateNormal];
+            [blueBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_blue_s"] forState:UIControlStateNormal];
             break;
         case epub_green:
-            [greenBtn setImage:[UIImage imageNamed:@"epub_green_s"] forState:UIControlStateNormal];
+            [greenBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_green_s"] forState:UIControlStateNormal];
             break;
         case epub_brown:
-            [brownBtn setImage:[UIImage imageNamed:@"epub_brown_s"] forState:UIControlStateNormal];
+            [brownBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_brown_s"] forState:UIControlStateNormal];
             break;
         default:
             break;
@@ -121,16 +121,16 @@
     EPUB_MARGIN margin = [dic[@"kEpubMargin"] intValue];
     switch (margin) {
         case epub_margin_default:
-            [marginDefaultBtn setImage:[UIImage imageNamed:@"epub_margin_default_s"] forState:UIControlStateNormal];
+            [marginDefaultBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_default_s"] forState:UIControlStateNormal];
             break;
         case epub_margin_two:
-            [marginTwoBtn setImage:[UIImage imageNamed:@"epub_margin_two_s"] forState:UIControlStateNormal];
+            [marginTwoBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_two_s"] forState:UIControlStateNormal];
             break;
         case epub_margin_three:
-            [marginThreeBtn setImage:[UIImage imageNamed:@"epub_margin_three_s"] forState:UIControlStateNormal];
+            [marginThreeBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_three_s"] forState:UIControlStateNormal];
             break;
         case epub_margin_four:
-            [marginFourBtn setImage:[UIImage imageNamed:@"epub_margin_four_s"] forState:UIControlStateNormal];
+            [marginFourBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_four_s"] forState:UIControlStateNormal];
             break;
         default:
             break;
@@ -194,39 +194,39 @@
     [mutableDic setObject:@(btn.tag) forKey:@"kEpubBgColor"];
     [Catalog saveEpubSetting:mutableDic];
     
-    [lightgrayBtn setImage:[UIImage imageNamed:@"epub_lightgray"] forState:UIControlStateNormal];
-    [whiteBtn setImage:[UIImage imageNamed:@"epub_white"] forState:UIControlStateNormal];
-    [blackBtn setImage:[UIImage imageNamed:@"epub_black"] forState:UIControlStateNormal];
-    [grayBtn setImage:[UIImage imageNamed:@"epub_gray"] forState:UIControlStateNormal];
-    [orangeBtn setImage:[UIImage imageNamed:@"epub_orange"] forState:UIControlStateNormal];
-    [blueBtn setImage:[UIImage imageNamed:@"epub_blue"] forState:UIControlStateNormal];
-    [greenBtn setImage:[UIImage imageNamed:@"epub_green"] forState:UIControlStateNormal];
-    [brownBtn setImage:[UIImage imageNamed:@"epub_brown"] forState:UIControlStateNormal];
+    [lightgrayBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_lightgray"] forState:UIControlStateNormal];
+    [whiteBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_white"] forState:UIControlStateNormal];
+    [blackBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_black"] forState:UIControlStateNormal];
+    [grayBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_gray"] forState:UIControlStateNormal];
+    [orangeBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_orange"] forState:UIControlStateNormal];
+    [blueBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_blue"] forState:UIControlStateNormal];
+    [greenBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_green"] forState:UIControlStateNormal];
+    [brownBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_brown"] forState:UIControlStateNormal];
     
     switch (btn.tag) {
         case epub_white:
-            [whiteBtn setImage:[UIImage imageNamed:@"epub_white_s"] forState:UIControlStateNormal];
+            [whiteBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_white_s"] forState:UIControlStateNormal];
             break;
         case epub_lightgray:
-            [lightgrayBtn setImage:[UIImage imageNamed:@"epub_lightgray_s"] forState:UIControlStateNormal];
+            [lightgrayBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_lightgray_s"] forState:UIControlStateNormal];
             break;
         case epub_black:
-            [blackBtn setImage:[UIImage imageNamed:@"epub_black_s"] forState:UIControlStateNormal];
+            [blackBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_black_s"] forState:UIControlStateNormal];
             break;
         case epub_gray:
-            [grayBtn setImage:[UIImage imageNamed:@"epub_gray_s"] forState:UIControlStateNormal];
+            [grayBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_gray_s"] forState:UIControlStateNormal];
             break;
         case epub_orange:
-            [orangeBtn setImage:[UIImage imageNamed:@"epub_orange_s"] forState:UIControlStateNormal];
+            [orangeBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_orange_s"] forState:UIControlStateNormal];
             break;
         case epub_blue:
-            [blueBtn setImage:[UIImage imageNamed:@"epub_blue_s"] forState:UIControlStateNormal];
+            [blueBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_blue_s"] forState:UIControlStateNormal];
             break;
         case epub_green:
-            [greenBtn setImage:[UIImage imageNamed:@"epub_green_s"] forState:UIControlStateNormal];
+            [greenBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_green_s"] forState:UIControlStateNormal];
             break;
         case epub_brown:
-            [brownBtn setImage:[UIImage imageNamed:@"epub_brown_s"] forState:UIControlStateNormal];
+            [brownBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_brown_s"] forState:UIControlStateNormal];
             break;
         default:
             break;
@@ -244,23 +244,23 @@
     [mutableDic setObject:@(btn.tag) forKey:@"kEpubMargin"];
     [Catalog saveEpubSetting:mutableDic];
     
-    [marginDefaultBtn setImage:[UIImage imageNamed:@"epub_margin_default"] forState:UIControlStateNormal];
-    [marginTwoBtn setImage:[UIImage imageNamed:@"epub_margin_two"] forState:UIControlStateNormal];
-    [marginThreeBtn setImage:[UIImage imageNamed:@"epub_margin_three"] forState:UIControlStateNormal];
-    [marginFourBtn setImage:[UIImage imageNamed:@"epub_margin_four"] forState:UIControlStateNormal];
+    [marginDefaultBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_default"] forState:UIControlStateNormal];
+    [marginTwoBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_two"] forState:UIControlStateNormal];
+    [marginThreeBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_three"] forState:UIControlStateNormal];
+    [marginFourBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_four"] forState:UIControlStateNormal];
     
     switch (btn.tag) {
         case epub_margin_default:
-            [marginDefaultBtn setImage:[UIImage imageNamed:@"epub_margin_default_s"] forState:UIControlStateNormal];
+            [marginDefaultBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_default_s"] forState:UIControlStateNormal];
             break;
         case epub_margin_two:
-            [marginTwoBtn setImage:[UIImage imageNamed:@"epub_margin_two_s"] forState:UIControlStateNormal];
+            [marginTwoBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_two_s"] forState:UIControlStateNormal];
             break;
         case epub_margin_three:
-            [marginThreeBtn setImage:[UIImage imageNamed:@"epub_margin_three_s"] forState:UIControlStateNormal];
+            [marginThreeBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_three_s"] forState:UIControlStateNormal];
             break;
         case epub_margin_four:
-            [marginFourBtn setImage:[UIImage imageNamed:@"epub_margin_four_s"] forState:UIControlStateNormal];
+            [marginFourBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_four_s"] forState:UIControlStateNormal];
             break;
         default:
             break;
@@ -356,26 +356,26 @@
         
         marginTwoBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         marginTwoBtn.tag = epub_margin_two;
-        [marginTwoBtn setImage:[UIImage imageNamed:@"epub_margin_two"] forState:UIControlStateNormal];
+        [marginTwoBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_two"] forState:UIControlStateNormal];
         [marginTwoBtn addTarget:self action:@selector(updateMargin:) forControlEvents:UIControlEventTouchUpInside];
         [marginView addSubview:marginTwoBtn];
         
         marginThreeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         marginThreeBtn.tag = epub_margin_three;
-        [marginThreeBtn setImage:[UIImage imageNamed:@"epub_margin_three"] forState:UIControlStateNormal];
+        [marginThreeBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_three"] forState:UIControlStateNormal];
         [marginThreeBtn addTarget:self action:@selector(updateMargin:) forControlEvents:UIControlEventTouchUpInside];
         [marginView addSubview:marginThreeBtn];
         
         marginFourBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         marginFourBtn.tag = epub_margin_four;
-        [marginFourBtn setImage:[UIImage imageNamed:@"epub_margin_four"] forState:UIControlStateNormal];
+        [marginFourBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_four"] forState:UIControlStateNormal];
         [marginFourBtn addTarget:self action:@selector(updateMargin:) forControlEvents:UIControlEventTouchUpInside];
         [marginView addSubview:marginFourBtn];
         
         
         marginDefaultBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         marginDefaultBtn.tag = epub_margin_default;
-        [marginDefaultBtn setImage:[UIImage imageNamed:@"epub_margin_default"] forState:UIControlStateNormal];
+        [marginDefaultBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_margin_default"] forState:UIControlStateNormal];
         [marginDefaultBtn addTarget:self action:@selector(updateMargin:) forControlEvents:UIControlEventTouchUpInside];
         [marginView addSubview:marginDefaultBtn];
         
@@ -412,52 +412,52 @@
         
         whiteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         whiteBtn.tag = epub_white;
-        [whiteBtn setImage:[UIImage imageNamed:@"epub_white"] forState:UIControlStateNormal];
+        [whiteBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_white"] forState:UIControlStateNormal];
         [whiteBtn addTarget:self action:@selector(updateBackgroundColor:) forControlEvents:UIControlEventTouchUpInside];
         [colorView addSubview:whiteBtn];
         
         blueBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         blueBtn.tag = epub_blue;
-        [blueBtn setImage:[UIImage imageNamed:@"epub_blue"] forState:UIControlStateNormal];
+        [blueBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_blue"] forState:UIControlStateNormal];
         [blueBtn addTarget:self action:@selector(updateBackgroundColor:) forControlEvents:UIControlEventTouchUpInside];
         [colorView addSubview:blueBtn];
         
         
         lightgrayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         lightgrayBtn.tag = epub_lightgray;
-        [lightgrayBtn setImage:[UIImage imageNamed:@"epub_lightgray"] forState:UIControlStateNormal];
+        [lightgrayBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_lightgray"] forState:UIControlStateNormal];
         [lightgrayBtn addTarget:self action:@selector(updateBackgroundColor:) forControlEvents:UIControlEventTouchUpInside];
         [colorView addSubview:lightgrayBtn];
         
         grayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         grayBtn.tag = epub_gray;
-        [grayBtn setImage:[UIImage imageNamed:@"epub_gray"] forState:UIControlStateNormal];
+        [grayBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_gray"] forState:UIControlStateNormal];
         [grayBtn addTarget:self action:@selector(updateBackgroundColor:) forControlEvents:UIControlEventTouchUpInside];
         [colorView addSubview:grayBtn];
         
         
         blackBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         blackBtn.tag = epub_black;
-        [blackBtn setImage:[UIImage imageNamed:@"epub_black"] forState:UIControlStateNormal];
+        [blackBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_black"] forState:UIControlStateNormal];
         [blackBtn addTarget:self action:@selector(updateBackgroundColor:) forControlEvents:UIControlEventTouchUpInside];
         [colorView addSubview:blackBtn];
         
         
         orangeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         orangeBtn.tag = epub_orange;
-        [orangeBtn setImage:[UIImage imageNamed:@"epub_orange"] forState:UIControlStateNormal];
+        [orangeBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_orange"] forState:UIControlStateNormal];
         [orangeBtn addTarget:self action:@selector(updateBackgroundColor:) forControlEvents:UIControlEventTouchUpInside];
         [colorView addSubview:orangeBtn];
         
         greenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         greenBtn.tag = epub_green;
-        [greenBtn setImage:[UIImage imageNamed:@"epub_green"] forState:UIControlStateNormal];
+        [greenBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_green"] forState:UIControlStateNormal];
         [greenBtn addTarget:self action:@selector(updateBackgroundColor:) forControlEvents:UIControlEventTouchUpInside];
         [colorView addSubview:greenBtn];
         
         brownBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         brownBtn.tag = epub_brown;
-        [brownBtn setImage:[UIImage imageNamed:@"epub_brown"] forState:UIControlStateNormal];
+        [brownBtn setImage:[UIImage loadImageClass:[self class] ImageName:@"epub_brown"] forState:UIControlStateNormal];
         [brownBtn addTarget:self action:@selector(updateBackgroundColor:) forControlEvents:UIControlEventTouchUpInside];
         [colorView addSubview:brownBtn];
         

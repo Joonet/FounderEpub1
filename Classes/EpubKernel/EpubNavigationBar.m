@@ -24,7 +24,7 @@
     if (self) {
         // Initialization code
         self.userInteractionEnabled = YES;
-        UIImage *barBGImage = [UIImage imageNamed:@"kernel_bar_bg_v"];
+        UIImage *barBGImage = [UIImage loadImageClass:[self class] ImageName:@"kernel_bar_bg_v"];
         [self setImage:barBGImage];
         
         [self addUtilityViews];
@@ -37,32 +37,32 @@
 {
     backToViewButton = [BHButton buttonWithType:UIButtonTypeCustom];
     backToViewButton.bhButtonType=BHRecordButton;
-    [backToViewButton setImage:[UIImage imageNamed:@"kernel_back_bookshelf"] forState:UIControlStateNormal];
-    [backToViewButton setImage:[UIImage imageNamed:@"kernel_back_bookshelf_s"] forState:UIControlStateHighlighted];
+    [backToViewButton setImage:[UIImage loadImageClass:[self class] ImageName:@"kernel_back_bookshelf"] forState:UIControlStateNormal];
+    [backToViewButton setImage:[UIImage loadImageClass:[self class] ImageName:@"kernel_back_bookshelf_s"] forState:UIControlStateHighlighted];
     [self addSubview:backToViewButton];
     
     searchButton = [BHButton buttonWithType:UIButtonTypeCustom];
     searchButton.bhButtonType=BHRecordButton;
-    [searchButton setImage:[UIImage imageNamed:@"kernel_search"] forState:UIControlStateNormal];
-    [searchButton setImage:[UIImage imageNamed:@"kernel_search_s"] forState:UIControlStateHighlighted];
+    [searchButton setImage:[UIImage loadImageClass:[self class] ImageName:@"kernel_search"] forState:UIControlStateNormal];
+    [searchButton setImage:[UIImage loadImageClass:[self class] ImageName:@"kernel_search_s"] forState:UIControlStateHighlighted];
     [self addSubview:searchButton];
     
     optionButton = [BHButton buttonWithType:UIButtonTypeCustom];
     optionButton.bhButtonType=BHRecordButton;
-    [optionButton setImage:[UIImage imageNamed:@"kernel_setting"] forState:UIControlStateNormal];
-    [optionButton setImage:[UIImage imageNamed:@"kernel_setting_s"] forState:UIControlStateHighlighted];
+    [optionButton setImage:[UIImage loadImageClass:[self class] ImageName:@"kernel_setting"] forState:UIControlStateNormal];
+    [optionButton setImage:[UIImage loadImageClass:[self class] ImageName:@"kernel_setting_s"] forState:UIControlStateHighlighted];
     [self addSubview:optionButton];
     
     bookMarkButton = [BHButton buttonWithType:UIButtonTypeCustom];
     bookMarkButton.bhButtonType=BHRecordButton;
-    [bookMarkButton setImage:[UIImage imageNamed:@"kernel_bookmark"] forState:UIControlStateNormal];
-    [bookMarkButton setImage:[UIImage imageNamed:@"kernel_bookmark_s"] forState:UIControlStateHighlighted];
+    [bookMarkButton setImage:[UIImage loadImageClass:[self class] ImageName:@"kernel_bookmark"] forState:UIControlStateNormal];
+    [bookMarkButton setImage:[UIImage loadImageClass:[self class] ImageName:@"kernel_bookmark_s"] forState:UIControlStateHighlighted];
     [self addSubview:bookMarkButton];
     
     directoryButton = [BHButton buttonWithType:UIButtonTypeCustom];
     directoryButton.bhButtonType=BHRecordButton;
-    [directoryButton setImage:[UIImage imageNamed:@"kernel_catalog"] forState:UIControlStateNormal];
-    [directoryButton setImage:[UIImage imageNamed:@"kernel_catalog"] forState:UIControlStateHighlighted];
+    [directoryButton setImage:[UIImage loadImageClass:[self class] ImageName:@"kernel_catalog"] forState:UIControlStateNormal];
+    [directoryButton setImage:[UIImage loadImageClass:[self class] ImageName:@"kernel_catalog"] forState:UIControlStateHighlighted];
     [self addSubview:directoryButton];
     
     

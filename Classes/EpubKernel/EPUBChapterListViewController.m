@@ -349,7 +349,7 @@ static NSString *CellIdentifier = @"EpubCell";
         
         //主标题图标view
         UIImageView *mainTitleIconImageView = [[UIImageView alloc]init];
-        [mainTitleIconImageView setImage:[UIImage imageNamed:@"EPUB_MainTitle_Icon"]];
+        [mainTitleIconImageView setImage:[UIImage loadImageClass:[self class] ImageName:@"EPUB_MainTitle_Icon"]];
         [cell.contentView addSubview:mainTitleIconImageView];
         
         
@@ -413,7 +413,7 @@ static NSString *CellIdentifier = @"EpubCell";
         [EPUBUtils constrainSubview:timeLable toMatchWithSuperview:cell.contentView withHpading:55 vpading:40 width:listTableView.frame.size.width-150 height:20];
         
         UIImageView *imageView =[[UIImageView alloc]init];
-        [imageView setImage:[UIImage imageNamed:@"EPUB_ChapterNote_icon"]];
+        [imageView setImage:[UIImage loadImageClass:[self class] ImageName:@"EPUB_ChapterNote_icon"]];
         [cell.contentView addSubview:imageView];
         
         [EPUBUtils constrainSubview:imageView toMatchWithSuperview:cell.contentView withHpading:30 vpading:40 width:8 height:16];

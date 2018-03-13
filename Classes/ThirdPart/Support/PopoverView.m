@@ -617,7 +617,7 @@
 }
 
 - (void)showError {
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"error"]];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage loadImageClass:[self class] ImageName:@"error"]];
     imageView.alpha = 0.f;
     imageView.frame = CGRectMake(CGRectGetMidX(contentView.bounds) - 20.f, CGRectGetMidY(contentView.bounds) - 20.f + 20.f, 40.f, 40.f);
     imageView.transform = CGAffineTransformMakeScale(0.1f, 0.1f);
@@ -647,7 +647,7 @@
 }
 
 - (void)showSuccess {
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"success"]];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage loadImageClass:[self class] ImageName:@"success"]];
     imageView.alpha = 0.f;
     imageView.frame = CGRectMake(CGRectGetMidX(contentView.bounds) - 20.f, CGRectGetMidY(contentView.bounds) - 20.f + 20.f, 40.f, 40.f);
     imageView.transform = CGAffineTransformMakeScale(0.1f, 0.1f);
