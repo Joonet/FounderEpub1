@@ -118,15 +118,25 @@
 -(void)addJSWithFileName:(NSString *)jsfileName withWebView:(UIWebView *)webview
 {
     dispatch_async(dispatch_get_main_queue(), ^{
+
+        NSString *bundlePath = [[NSBundle bundleForClass:[self class]].resourcePath
+                                stringByAppendingPathComponent:@"BundleEpbuJS.bundle"];
+        NSBundle * resource_bundle  = [NSBundle bundleWithPath:bundlePath];
         
-        NSString *path = [[NSBundle mainBundle]pathForResource:@"BundleEpbuJS" ofType:@"bundle"];
-        NSString *resourceFilePath = [path stringByAppendingPathComponent:@"Contents/Resources/epubjs"];        
+        NSString *path = [resource_bundle pathForResource:@"BundleEpbuJS" ofType:@"bundle"];
+        NSString *resourceFilePath = [path stringByAppendingPathComponent:@"Contents/Resources/epubjs"];
+        
+        
+        
         NSString *filePath  = [resourceFilePath stringByAppendingPathComponent:jsfileName];
         NSData *fileData    = [NSData dataWithContentsOfFile:filePath];
         NSString *jsString  = [[NSMutableString alloc] initWithData:fileData encoding:NSUTF8StringEncoding];
         [webview stringByEvaluatingJavaScriptFromString:jsString];
         
     });
+    
+    
+    
     
 }
 

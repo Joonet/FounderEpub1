@@ -67,6 +67,7 @@
 		47CAB57D205275BE0021193A /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CAB57C205275BE0021193A /* libxml2.tbd */; };
 		47CAB57F205276C70021193A /* BundleEpbuJS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 47CAB57E205276C40021193A /* BundleEpbuJS.bundle */; };
 		47CAB5CB205653A60021193A /* EPUB.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47CAB5CA205653A20021193A /* EPUB.xcassets */; };
+		47D36F28205688960002483E /* UIImage+UIImage_LoadCocoaPodImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D36F27205688960002483E /* UIImage+UIImage_LoadCocoaPodImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -194,6 +195,8 @@
 		47CAB57C205275BE0021193A /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		47CAB57E205276C40021193A /* BundleEpbuJS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BundleEpbuJS.bundle; sourceTree = "<group>"; };
 		47CAB5CA205653A20021193A /* EPUB.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = EPUB.xcassets; sourceTree = "<group>"; };
+		47D36F26205688960002483E /* UIImage+UIImage_LoadCocoaPodImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIImage_LoadCocoaPodImage.h"; sourceTree = "<group>"; };
+		47D36F27205688960002483E /* UIImage+UIImage_LoadCocoaPodImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIImage_LoadCocoaPodImage.m"; sourceTree = "<group>"; };
 		FE795B352B82B16DB571A2E5 /* libPods-EpubCocoapod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EpubCocoapod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -249,6 +252,8 @@
 		47CAB4C320526E810021193A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				47D36F26205688960002483E /* UIImage+UIImage_LoadCocoaPodImage.h */,
+				47D36F27205688960002483E /* UIImage+UIImage_LoadCocoaPodImage.m */,
 				47CAB4C420526E810021193A /* Common */,
 				47CAB4DF20526E820021193A /* EPUB.h */,
 				47CAB4E020526E820021193A /* EPUB.m */,
@@ -604,6 +609,7 @@
 				47CAB55A20526EB20021193A /* EPUBChapterListViewController.m in Sources */,
 				47CAB57620526ECD0021193A /* NSString+DDXML.m in Sources */,
 				47CAB57B20526ED50021193A /* PopoverView.m in Sources */,
+				47D36F28205688960002483E /* UIImage+UIImage_LoadCocoaPodImage.m in Sources */,
 				47CAB56C20526EB20021193A /* HYEpubParser.m in Sources */,
 				47CAB56020526EB20021193A /* EpubMarkObject.m in Sources */,
 				47CAB57920526ECD0021193A /* DDXMLNode.m in Sources */,
